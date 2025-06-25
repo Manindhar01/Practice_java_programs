@@ -1,0 +1,7 @@
+1722407573203	Rename type 'MovieTicket'
+1722408234477	Encapsulate field 'id, ...'
+1722408240833	Encapsulate field 'mname, ...'
+1722408258847	Encapsulate field 'ticketPrice, ...'
+1722408262840	Encapsulate field 'showTime, ...'
+1722408266894	Encapsulate field 'showDate, ...'
+1722408271814	Encapsulate field 'avl_seats, ...'

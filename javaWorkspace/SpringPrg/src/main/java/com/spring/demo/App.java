@@ -1,0 +1,18 @@
+package com.spring.demo;
+
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ClassPathXmlApplicationContext ac=new ClassPathXmlApplicationContext("spring.xml");
+		Car bean = (Car) ac.getBean("car");
+		bean.drive();
+		System.out.println(bean.getName());
+
+	}
+
+}
+ 

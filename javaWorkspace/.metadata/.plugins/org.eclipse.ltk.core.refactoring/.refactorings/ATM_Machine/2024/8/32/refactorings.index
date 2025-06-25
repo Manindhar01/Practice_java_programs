@@ -1,0 +1,32 @@
+1722835011468	Delete element
+1722854943761	Delete element
+1722916348770	Rename type 'UsersOption'
+1722916670208	Encapsulate field 'balance, ...'
+1722916675720	Encapsulate field 'debit, ...'
+1722916681283	Encapsulate field 'credit, ...'
+1722917292896	Delete element
+1722933886999	Delete element
+1722944669034	Delete element
+1723100377771	Rename type 'CheckAccount'
+1723101684158	Rename local variable 'con'
+1723101959776	Rename local variable 'p'
+1723102007045	Rename local variable 'ps2'
+1723102079007	Rename local variable 'ps3'
+1723102108582	Rename local variable 'con'
+1723102288493	Rename local variable 'ps4'
+1723102317894	Rename local variable 'ps5'
+1723102340921	Rename local variable 'ps6'
+1723102378858	Rename local variable 'ps1'
+1723202147594	Rename local variable 'q1'
+1723202170986	Rename local variable 'updatequery'
+1723202191634	Rename local variable 'query1'
+1723202206865	Rename local variable 'preparestatement4'
+1723202236656	Rename local variable 'rs1'
+1723202263634	Rename local variable 'preparestatement6'
+1723202282145	Rename local variable 'preparestatement5'
+1723202305384	Rename local variable 'squery'
+1723202318104	Rename local variable 'updateb'
+1723202335081	Rename local variable 'query'
+1723202372729	Rename local variable 'rs'
+1723202674112	Rename local variable 'preparestatement3'
+1723202690558	Rename local variable 'preparestatement2'

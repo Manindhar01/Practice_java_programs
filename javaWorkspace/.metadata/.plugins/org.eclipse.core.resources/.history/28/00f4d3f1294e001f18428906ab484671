@@ -1,0 +1,54 @@
+package com.java.online_ticket_booking;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class User {
+	
+	public static void listmovie() {
+		try {
+			Connection con =DBConnection.getConnection();
+			Statement st = con.createStatement();
+			ResultSet rs = st.executeQuery("select*from movielist");
+			System.out.println("WELCOME TO IMAX CINAMAS");
+			while(rs.next()) {
+				System.out.println("id: "+rs.getInt(1));
+				System.out.println("movie name: "+rs.getString(2));
+				System.out.println("price: "+rs.getInt(3));
+				System.out.println("show time: "+rs.getTime(4));
+				System.out.println("show date: "+rs.getDate(5));
+				System.out.println("seats available:"+rs.getInt(6));
+				System.out.println();
+			}
+			
+			System.out.println("select any movie using id");
+			PreparedStatement ps = con.prepareStatement("select*from movielist where id=?");
+			Scanner s=new Scanner(System.in);
+			int n=s.nextInt();
+			ps.setInt(1, n);
+			ResultSet rs1 = ps.executeQuery();
+			while(rs1.next()) {
+				System.out.println(rs1.getInt(1));
+				System.out.println(rs1.getString(2));
+				System.out.println(rs1.getInt(3));
+				System.out.println(rs1.getTime(4));
+				System.out.println(rs1.getDate(5));
+				System.out.println(rs1.getInt(6));
+			}
+			
+			
+			con.close();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+
+}

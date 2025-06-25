@@ -1,0 +1,21 @@
+package com.atm_machine;
+
+import java.util.Scanner;
+
+public class AddAccountsService {
+	
+	public void addAccount() {
+		Scanner s=new Scanner(System.in);
+		AccountDetails ad=new AccountDetails();
+		System.out.println("Enter Acount Number");
+		String acc_no=s.next();
+		ad.setAccount_no(acc_no);
+		String name=s.next();
+		ad.setName(name);
+		String pin=s.next();
+		ad.setAtm_pin(pin);
+		
+		
+	}
+
+}

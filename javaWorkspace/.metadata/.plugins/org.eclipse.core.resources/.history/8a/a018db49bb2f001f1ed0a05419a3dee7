@@ -1,0 +1,23 @@
+package JavaString;
+
+import java.io.UnsupportedEncodingException;
+import java.util.stream.IntStream;
+
+public class StringExample {
+
+	public static void main(String[] args) throws UnsupportedEncodingException {
+		// TODO Auto-generated method stub
+		String name="manindhar";
+		String name1="ManinDhar";
+		byte[] ch=name.getBytes();
+		System.out.println(ch);
+		byte[] ch1=name.getBytes();
+		System.out.println(ch1);
+		byte[] b=name.getBytes("UTF-16");
+		for(int i=0;i<b.length;i++) {
+			System.out.print(b[i]);
+		}
+
+	}
+
+}

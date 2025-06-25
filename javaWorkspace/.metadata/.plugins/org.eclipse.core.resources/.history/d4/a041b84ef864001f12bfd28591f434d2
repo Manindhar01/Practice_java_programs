@@ -1,0 +1,21 @@
+package com.atm_machine;
+
+import java.beans.Statement;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class ToStore {
+
+	public static void main(String[] args) {
+	
+
+	}
+
+}

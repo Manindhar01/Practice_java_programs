@@ -1,0 +1,13 @@
+package JavaString;
+
+public class StringExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name="manindhar";
+		char ch=name.charAt(4);
+		System.out.println(ch);
+
+	}
+
+}

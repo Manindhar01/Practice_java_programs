@@ -1,0 +1,59 @@
+package com.atm_machine;
+
+import java.beans.Statement;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class ToStore {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		AccountDetails ad=new AccountDetails();
+		ad.setName("ilyas");
+		ad.setAccount_no("88889999");
+		ad.setAtm_pin("2244");
+		
+		AccountDetails ad1=new AccountDetails();
+		ad1.setName("suhail");
+		ad1.setAccount_no("22889999");
+		ad1.setAtm_pin("2044");
+		
+		AccountDetails ad2=new AccountDetails();
+		ad2.setName("hari");
+		ad2.setAccount_no("4985934");
+		ad2.setAtm_pin("1190");
+		
+		
+		Statements s=new Statements();
+		s.setDate(LocalDate.now());
+		s.setTime(LocalTime.now());
+		s.setCredit(800);
+		s.setDebit(0);
+		s.setBalance(600);
+		s.setAcc_noum(ad1);
+		
+		
+		Configuration con = new Configuration().configure().addAnnotatedClass(AccountDetails.class).addAnnotatedClass(Statements.class);
+		SessionFactory sf = con.buildSessionFactory();
+		Session session = sf.openSession();
+		Transaction tx = session.beginTransaction();
+		//session.save(ad);
+		//session.save(ad1);
+		//session.save(ad2);
+		session.save(s);
+		
+		
+		
+		tx.commit();
+		sf.close();
+
+	}
+
+}

@@ -1,0 +1,31 @@
+package com.java.online_ticket_booking;
+
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Time;
+
+public class Booking_details {
+	public static int bookticket(int n,int i ) {
+		try {
+			Connection con=DBConnection.getConnection();
+			PreparedStatement ps = con.prepareStatement("insert into bookticket values(?,?,?,?,?)");
+			ps.setInt(1,0);
+			String n1="now()";
+			Time t=Time.valueOf(n1);
+			ps.setTime(2,t);
+			String n2="now()";
+			Date d=Date.valueOf(n2);
+			ps.setTime(3,t);
+			ps.setInt(4, i);
+			ps.setInt(5, n);
+			int rows = ps.executeUpdate();
+			System.out.println("number of rows affected"+rows);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return n;
+	}
+
+}

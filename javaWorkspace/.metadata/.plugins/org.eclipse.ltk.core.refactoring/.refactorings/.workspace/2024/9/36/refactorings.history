@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;ATM_Machine_UsingHypernate&apos; to &apos;ATM_Machine_UsingHibernate&apos;&#x0D;&#x0A;- Original element: &apos;ATM_Machine_UsingHypernate&apos;&#x0D;&#x0A;- Renamed element: &apos;ATM_Machine_UsingHypernate&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;ATM_Machine_UsingHypernate&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=ATM_Machine_UsingHypernate" name="ATM_Machine_UsingHibernate" references="true" stamp="1725625214329" version="1.0"/>
+</session>

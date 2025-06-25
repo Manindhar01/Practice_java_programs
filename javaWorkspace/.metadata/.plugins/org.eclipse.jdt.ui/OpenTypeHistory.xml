@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=Inheritance/src&lt;examp{JDK6.java[JDK6" modifiers="1" timestamp="1719483999724"/>
+    <typeInfo handle="=Inheritance/src&lt;examp{JDK7.java[JDK7" modifiers="1" timestamp="1719483802426"/>
+    <typeInfo handle="=Inheritance/src&lt;com.mani.inheritance{Employee.java[Employee" modifiers="1" timestamp="1719550169858"/>
+    <typeInfo handle="=Abstraction/src&lt;examp{BMW.java[BMW" modifiers="1025" timestamp="1719553002226"/>
+    <typeInfo handle="=Collections/C:\/Users\/bzf\/.p2\/pool\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.1.v20240426-1149\/jre\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/22\/docs\/api\/=/=/module=/true=/&lt;java.util(Comparators.class[Comparators" modifiers="32" timestamp="1714112546000"/>
+    <typeInfo handle="=Collections/C:\/Users\/bzf\/.p2\/pool\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.1.v20240426-1149\/jre\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/22\/docs\/api\/=/=/module=/true=/&lt;java.util(Comparator.class[Comparator" modifiers="1537" timestamp="1714112546000"/>
+    <typeInfo handle="=Java8Features/src&lt;prg{A.java[A" modifiers="513" timestamp="1720088481557"/>
+    <typeInfo handle="=Java8Features/C:\/Users\/bzf\/.p2\/pool\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.1.v20240426-1149\/jre\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/22\/docs\/api\/=/=/module=/true=/&lt;java.lang(Runnable.class[Runnable" modifiers="1537" timestamp="1714112546000"/>
+    <typeInfo handle="=Java8Features/src&lt;com.mani.java8.defaultinterface{A.java[A" modifiers="513" timestamp="1720093838320"/>
+    <typeInfo handle="=SpringDependencyInjection/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;net.codejava{Client.java[Client" modifiers="513" timestamp="1726221277569"/>
+</typeInfoHistroy>

@@ -1,0 +1,33 @@
+package com.java.online_ticket_booking;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class Ticket_price {
+	public static void price(int n,int i) {
+		try {
+			Connection con=DBConnection.getConnection();
+			PreparedStatement  ps= con.prepareStatement("select ticketprice from movielist where id=?");
+			ps.setInt(1, i);
+			ResultSet rs = ps.executeQuery();
+		     if (rs.next()) { 
+                 int pr = rs.getInt("ticketprice");
+                 Booking_details.bookticket(pr, n,i); 
+             } else {
+                 System.out.println("No ticket price found for the given id.");
+             }
+			con.close();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		
+		
+		
+	}
+
+}

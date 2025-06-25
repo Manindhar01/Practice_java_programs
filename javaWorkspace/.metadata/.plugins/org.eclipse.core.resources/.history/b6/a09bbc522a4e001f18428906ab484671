@@ -1,0 +1,27 @@
+package com.java.online_ticket_booking;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class Ticket_price {
+	public static int price(int p,int i) {
+		try {
+			Connection con=DBConnection.getConnection();
+			PreparedStatement  ps= con.prepareStatement("select ticketprice from id=?");
+			ps.setInt(1, i);
+			ResultSet rs = ps.executeQuery();
+			System.out.println(rs.getInt(1));
+			
+			
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return 0;
+		
+	}
+
+}

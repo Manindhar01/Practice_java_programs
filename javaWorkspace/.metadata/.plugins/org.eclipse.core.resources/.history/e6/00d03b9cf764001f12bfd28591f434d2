@@ -1,0 +1,5 @@
+package com.atm_machine;
+
+public class HibernateUtil {
+
+}

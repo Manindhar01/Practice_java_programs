@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+module PatientBilling {
+	requires PatientClinical;
+	
+}
